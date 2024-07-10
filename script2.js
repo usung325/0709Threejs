@@ -77,7 +77,7 @@ const geometry = new THREE.PlaneGeometry(2, 4);
 
 // Load texture
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load('./static/im2.png');
+const texture = textureLoader.load('/static/im2.png');
 
 
 // Create shader material with new uniforms
