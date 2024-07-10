@@ -2,9 +2,137 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color:rgb(155, 83, 210); */
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+body {
+    background-color: black;
+}
+
+.webgl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* background-color:blue; */
+
+}
+
+nav {
+    color: white;
+    z-index: 2;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    gap: 60rem;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    display: inline;
+    background-color: transparent;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+    /* font-size:2rem; */
+    background-color: transparent;
+}
+
+.title {
+    position: absolute;
+    left: 8%;
+    top: 90%;
+}
+
+
+/* #text {
+    height: 600px;
+    width: 500px;
+    top: 15%;
+    left: 35%;
+    z-index: -1;
+    font-size: 1.6rem;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+} */
+
+#text {
+    /* background-color:pink; */
+    border-radius: 5px;
+    height: 600px;
+    width: 500px;
+    top: 15%;
+    left: 35%;
+    z-index: -1;
+    font-size: 1.6rem;
+    color: white;
+    position:absolute;
+    overflow: hidden;
+}
+/* #text2 {
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -50px;
+    bottom: 0;
+
+} */
+
+#text2 {
+    /* overflow: scroll; */
+    position: absolute;
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+
+    -moz-animation: my-animation 80s linear infinite;
+    -webkit-animation: my-animation 80s linear infinite;
+    animation: my-animation 80s linear infinite;
+}
+
+
+/* for Firefox */
+@keyframes my-animation {
+    from {
+      transform: translateY(20%);
+    }
+    to {
+      transform: translateY(-100%); /* Only move up by half the height */
+    }
+  }
+  
+  /* Vendor prefixed versions */
+  @-webkit-keyframes my-animation {
+    from {
+      -webkit-transform: translateY(20%);
+    }
+    to {
+      -webkit-transform: translateY(-100%);
+    }
+  }
+  
+  @-moz-keyframes my-animation {
+    from {
+      -moz-transform: translateY(20%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+    }
+  }
